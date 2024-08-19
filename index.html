@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>BulmaCSS</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li class="first-nav-li"><a href="#">
+            <span class="nav-icon" style="color: orange;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                class="bi bi-globe-americas" viewBox="0 0 16 16">
+                <path
+                  d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484q-.121.12-.242.234c-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z" />
+              </svg>
+            </span>
+            <strong>YURTDIŞI TURLARI</strong></a></li>
+        <li><a href="#">
+            <span class="nav-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 512">
+                <path
+                  d="M501.6 92.1L267.2 2a32 32 0 0 0 -22.5 0L10.4 92.1A16 16 0 0 0 0 107.1V144c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16v-36.9c0-6.7-4.1-12.6-10.4-15zM64 192v160H48c-8.8 0-16 7.2-16 16v48h448v-48c0-8.8-7.2-16-16-16h-16V192h-64v160h-96V192h-64v160h-96V192H64zm432 256H16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16z" />
+              </svg>
+            </span>
+            <strong>KÜLTÜR TURLARI</strong></a></li>
+        <li><a href="#">
+            <span class="nav-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 640 512">
+                <path
+                  d="M496.6 372.6l70-70c16.9-16.9 9.9-45.8-12.8-53.1L512 236.1V96c0-17.7-14.3-32-32-32h-64V24c0-13.3-10.7-24-24-24H248c-13.3 0-24 10.7-24 24v40h-64c-17.7 0-32 14.3-32 32v140.1l-41.8 13.4c-22.8 7.3-29.8 36.2-12.8 53.1l70 70C125.8 416.3 85.6 448 24 448c-13.3 0-24 10.7-24 24v16c0 13.3 10.7 24 24 24 61 0 107.5-20.6 143.3-59.4C181.7 487.4 216 512 256 512h128c40 0 74.3-24.6 88.7-59.4C508.5 491.4 555 512 616 512c13.3 0 24-10.7 24-24v-16c0-13.3-10.7-24-24-24-60.8 0-101.5-31-119.4-75.4zM192 128h256v87.5l-118.2-38a32 32 0 0 0 -19.6 0L192 215.5V128z" />
+              </svg>
+            </span>
+            <strong>GEMİ TURLARI</strong></a></li>
+        <li><a href="#">
+            <span class="nav-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 448 512">
+                <path
+                  d="M129.6 176h39.1c1.5-27 6.5-51.4 14.2-70.4-27.7 13.2-48 39.2-53.3 70.4zm0 32c5.3 31.2 25.6 57.2 53.3 70.4-7.7-19.1-12.7-43.4-14.2-70.4h-39.1zM224 286.7c7.7-7.5 20.8-34.4 23.4-78.7h-46.9c2.7 44.3 15.8 71.2 23.4 78.7zM200.6 176h46.9c-2.7-44.3-15.7-71.2-23.4-78.7-7.7 7.5-20.8 34.4-23.4 78.7zm64.5 102.4c27.7-13.2 48-39.2 53.3-70.4h-39.1c-1.5 27-6.5 51.4-14.2 70.4zM416 0H64C28.7 0 0 28.7 0 64v384c0 35.4 28.7 64 64 64h352c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32zm-80 416H112c-8.8 0-16-7.2-16-16s7.2-16 16-16h224c8.8 0 16 7.2 16 16s-7.2 16-16 16zm-112-96c-70.7 0-128-57.3-128-128S153.3 64 224 64s128 57.3 128 128-57.3 128-128 128zm41.1-214.4c7.7 19.1 12.7 43.4 14.2 70.4h39.1c-5.3-31.2-25.6-57.2-53.3-70.4z" />
+              </svg>
+            </span>
+            <strong>VİZE İŞLEMLERİ</strong></a></li>
+        <li class="register"><a href="#"><strong style="color: #105eac;">KAYIT OL</strong></a></li>
+        <li class="login"><a href="#"><strong style="color: #105eac;">GİRİŞ YAP</strong></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="clear-fix"></div>
+
+  <main>
+    <hr class="nav-hr">
+    <div class="search">
+      <input type="search" class="nav-input" placeholder="Yurtiçi, Yurtdışı Gitmek İstediğiniz Destinasyon">
+      <button class="search-icon"><i class="bi bi-search"></i></button>
+    </div>
+    <button class="btn"><strong>DETAYLI ARAMA</strong><i class="bi bi-chevron-down"></i></button>
+    <hr class="nav-hr-end">
+
+    <div>
+      <ul class="menu">
+        <li class="menu-1"><a href="#"><i class="bi bi-house-door"></i></a></li>
+        <li class="menu-1"><i class="bi bi-chevron-right" style="color: #b0b0b1ea;"></i><a href="#">Avrupa'yı Keşfet</a>
+        </li>
+        <li><i class="bi bi-chevron-right" style="color: #b0b0b1ea"></i><a href="#"><strong class="rm">Roma
+              Turları</strong></a>
+          <i class="bi bi-chevron-down"></i></button>
+        </li>
+      </ul>
+
+    </div>
+
+  </main>
+  <div class="clear-fix"></div>
+  <div class="container">
+    <aside>
+      <div class="first-card">
+        <h4><strong class="filter-header">Filtreler</strong></h4>
+        <ul>
+          <li><i class="bi bi-x-circle" style="color: #4c9ef1; margin-right: 10px;"></i>Kalkış Tarihi:
+            <strong>Şubat
+              2021</strong>
+          </li>
+          <li><i class="bi bi-x-circle" style="color: #4c9ef1; margin-right: 10px;"></i>Bütçe:
+            <strong>15.000TL -
+              30.000TL</strong>
+          </li>
+        </ul>
+        <button class="btn-cancel">Tümünü temizle</button>
+      </div>
+
+      <div class="second-card">
+        <p><strong style="margin-right: 5px;">Popüleritre: </strong>En Popüler<span style="margin-left: 70px;"><i
+              class="bi bi-chevron-down"></i></span>
+      </div>
+
+      <div class="third-card">
+        <div class="third-card-hr">
+          <strong class="tur-header">Tur Süresi</strong>
+          <span><i class="bi bi-chevron-up" style="margin-left: 157px;"></i></span>
+        </div>
+        <p style="margin-top: 20px; margin-left: 10px;">min. <strong>3 gün</strong><strong style="margin-left:140px">21
+            gün</strong></p>
+        <input type="range" style="min-width: 260px; margin-top: 10px; margin-left: 10px;">
+      </div>
+
+      <div class="fourth-card">
+        <div class="fourth-card-hr">
+          <strong class="fourth-header">Kalkış Tarihi</strong>
+          <span><i class="bi bi-chevron-up" style="margin-left: 140px;"></i></span>
+        </div>
+        <div class="input-fourth-card">
+          <div class="checkbox-fourth-card">
+            <input type="checkbox" checked="checked">
+            <span class="date-time">Ocak 2021</span><span class="number" style="margin-left: 162px;">65</span>
+          </div>
+          <div class="checkbox-fourth-card">
+            <input type="checkbox">
+            <span class="date-time">Şubat 2021</span><span class="number" style="margin-left: 160px;">65</span>
+          </div>
+          <div class="checkbox-fourth-card">
+            <input type="checkbox">
+            <span class="date-time">Mart 2021</span><span class="number" style="margin-left: 166px;">65</span>
+          </div>
+          <div class="checkbox-fourth-card">
+            <input type="checkbox">
+            <span class="date-time">Nisan 2021</span><span class="number" style="margin-left: 160px;">65</span>
+          </div>
+          <div class="checkbox-fourth-card">
+            <input type="checkbox">
+            <span class="date-time">Mayıs 2021</span><span class="number" style="margin-left: 157px;">65</span>
+          </div>
+          <a href="#" style="text-decoration: none; color: #205081;">Daha Fazla Göster</a>
+          <input type="date" id="birthday" name="birthday" class="date">
+        </div>
+      </div>
+      <div class="fifth-card">
+        <div class="fifth-card-hr">
+          <strong class="fifth-header">Tur Çeşidi</strong>
+          <span><i class="bi bi-chevron-up" style="margin-left: 160px;"></i></span>
+        </div>
+        <div class="input-fifth-card">
+          <div class="checkbox-fifth-card" style="margin-bottom: 20px;">
+            <input type="checkbox" checked="checked">
+            <span class="date-time">Grup</span><span class="number" style="margin-left: 200px;">23</span>
+          </div>
+          <div class="checkbox-fifth-card">
+            <input type="checkbox">
+            <span class="date-time">Özel</span><span class="number" style="margin-left: 203px;">56</span>
+          </div>
+
+        </div>
+      </div>
+      <div class="six-card">
+        <div class="six-card-hr">
+          <strong class="six-header">Rehber Türü</strong>
+          <span><i class="bi bi-chevron-up" style="margin-left: 140px;"></i></span>
+        </div>
+        <div class="input-six-card">
+          <div class="checkbox-six-card">
+            <input type="checkbox" checked="checked">
+            <span class="date-time">Fully Guided</span><span class="number" style="margin-left: 150px;">23</span>
+          </div>
+          <div class="checkbox-six-card">
+            <input type="checkbox">
+            <span class="date-time">Party Guided</span><span class="number" style="margin-left: 150px;">56</span>
+          </div>
+          <div class="checkbox-six-card">
+            <input type="checkbox">
+            <span class="date-time">Self Guided</span><span class="number" style="margin-left: 157px;">56</span>
+          </div>
+          <div class="checkbox-six-card">
+            <input type="checkbox">
+            <span class="date-time">Self Drive</span><span class="number" style="margin-left: 167px;">56</span>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="seven-card">
+        <div class="seven-card-hr">
+          <strong class="seven-header">Rehber Türü</strong>
+          <span><i class="bi bi-chevron-up" style="margin-left: 140px;"></i></span>
+        </div>
+
+        <div class="seven-card-hr age-btn">
+          <button class="age" style="border: 2px solid #5995d1;">18-30</button>
+          <button class="age">30+</button>
+          <button class="age">40+</button>
+          <button class="age" style="background-color: #3a80c7; color: white;">50+</button>
+          <button class="age">60+</button>
+          <button class="age">70+</button>
+        </div>
+        <div>
+          <p class="or"><strong>Veya çocuk dostu turlara göre Filtreleyin</strong></p>
+
+        </div>
+        <div class=" custom-select">
+          <select class="select">
+            <option value="0">En küçük çocuk yaşı</option>
+
+          </select>
+        </div>
+      </div>
+      <div class="eight-card">
+        <div class="eight-card-hr">
+          <strong class="eight-header">Kategori</strong>
+          <span><i class="bi bi-chevron-up" style="margin-left: 170px;"></i></span>
+        </div>
+        <div class="input-eight-card">
+
+          <p class="eight-p"><i class="bi bi-arrow-down-circle-fill"></i><span>Kültürel</span></p>
+          <p class="eight-p"><i class="bi bi-arrow-up-circle-fill"></i><span>Aktiviteler</span></p>
+
+
+          <div class="checkbox-eight-card">
+            <input type="checkbox" checked="checked">
+            <span class="date-time">Gezi</span><span class="number" style="margin-left: 200px;">23</span>
+          </div>
+          <div class="checkbox-eight-card">
+            <input type="checkbox">
+            <span class="date-time">Yemek Eğitimi</span><span class="number" style="margin-left: 135px;">56</span>
+          </div>
+          <div class="checkbox-eight-card">
+            <input type="checkbox">
+            <span class="date-time">Romantik</span><span class="number" style="margin-left: 168px;">56</span>
+          </div>
+          <div class="checkbox-eight-card">
+            <input type="checkbox">
+            <span class="date-time">Yürüyüş Turları</span><span class="number" style="margin-left: 130px;">56</span>
+          </div>
+          <div class="checkbox-eight-card">
+            <input type="checkbox">
+            <span class="date-time">Müze</span><span class="number" style="margin-left: 195px;">56</span>
+          </div>
+          <div class="checkbox-eight-card">
+            <input type="checkbox">
+            <span class="date-time">Dini Yerler</span><span class="number" style="margin-left: 160px;">56</span>
+          </div>
+          <a href="#" style="text-decoration:none; color: #3a80c7;">Tümünü Seç</a>
+          <p class="eight-p"><i class="bi bi-arrow-down-circle-fill"></i><span>Doğa ve Macera</span></p>
+          <p class="eight-p"><i class="bi bi-arrow-down-circle-fill"></i><span>Festival ve Etkinliler</span></p>
+        </div>
+      </div>
+      <div class="nine-card">
+        <div class="nine-card-hr">
+          <strong class="nine-header">Bütçe</strong>
+          <span><i class="bi bi-chevron-up" style="margin-left: 190px;"></i></span>
+        </div>
+        <div class="nine-button">
+          <button style="background-color: #3a80c7; color: white;">Kişi Başı</button><button
+            style="background-color:white;border: 1px solid rgb(230, 226, 226);">Günlük</button>
+        </div>
+
+        <p style="margin-top: 20px; margin-left: 10px;">min. <strong>15.000TL</strong><strong
+            style="margin-left:120px">30.000TL</strong></p>
+        <input type="range" style="min-width: 260px; margin-top: 10px; margin-left: 10px;">
+
+      </div>
+      <div class="ten-card">
+        <div class="ten-card-hr">
+          <strong class="ten-header">Gezilecek Şehirler</strong>
+          <span><i class="bi bi-chevron-up" style="margin-left: 105px;"></i></span>
+        </div>
+        <input class="input-ten" type="text" placeholder="Bir Şehir Yazın">
+      </div>
+
+      <div class="eleven-card">
+        <div class="eleven-card-hr">
+          <strong class="eleven-header">Gezilecek Şehirler</strong>
+          <span><i class="bi bi-chevron-up" style="margin-left: 105px;"></i></span>
+        </div>
+        <div class=" custom-select">
+          <select class="select">
+            <option value="0">Bari</option>
+            <option value="0">Barolo</option>
+            <option value="0">Basel</option>
+            <option value="0">Barcelona</option>
+          </select>
+        </div>
+      </div>
+
+    </aside>
+
+    <div class="main">
+      <section>
+        <span class="img"><img src="https://picsum.photos/id/74/200/200" alt=""><a href="#"><i
+              class="bi bi-heart-fill fav"></i></a></span>
+        <div class="text-middle">
+          <strong style="color:#4c9ef1;">İstanbul Kalkışlı</strong>
+          <h2>Europe Highlights Tour</h2>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star white"></span>
+          <span class="fa fa-star white"></span>
+          <span class="star">5 yorum</span>
+          <p class="ps"><strong class="station">Durak</strong>Italy, Austria, Hungary <span class="more">+2
+              daha</span>
+          </p>
+          <p class="pc"><strong class="category">Kategori</strong>Private, Fuly Guided, Easy <span class="more">+4
+              daha</span></p>
+        </div>
+        <div class="text-end">
+          <p class="night">12 Gece <span><strong class="price-1">2,594 TL</strong>yerine</span></p>
+          <p class="visa">vizesiz <span><strong class="price-2">2,125 TL</strong></span></p>
+          <i class="bi bi-check-circle-fill" style="margin: 18px; color: #205081;"></i>
+          <span style="color: #205081"><b style="font-size: 12px; margin-left: -8px;">Ücretsiz İptal</b></span>
+          <br>
+          <button class="button">Turu incele</button>
+        </div>
+      </section>
+
+      <section>
+        <span class="img"><img src="https://picsum.photos/id/50/200/200" alt=""><a href="#"><i
+              class="bi bi-heart-fill fav"></i></a></span>
+        <div class="text-middle">
+          <strong style="color:#4c9ef1;">İstanbul Kalkışlı</strong>
+          <h2>Europe Highlights Tour</h2>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star white"></span>
+          <span class="fa fa-star white"></span>
+          <span class="star">5 yorum</span>
+          <p class="ps"><strong class="station">Durak</strong>Italy, Austria, Hungary <span class="more">+2
+              daha</span>
+          </p>
+          <p class="pc"><strong class="category">Kategori</strong>Private, Fuly Guided, Easy <span class="more">+4
+              daha</span></p>
+        </div>
+        <div class="text-end">
+          <p class="night">12 Gece <span><strong class="price-1">2,594 TL</strong>yerine</span></p>
+          <p class="visa">vizesiz <span><strong class="price-2">2,125 TL</strong></span></p>
+          <i class="bi bi-check-circle-fill" style="margin: 18px; color: #205081;"></i>
+          <span style="color: #205081"><b style="font-size: 12px; margin-left: -8px;">Ücretsiz İptal</b></span>
+          <br>
+          <button class="button">Turu incele</button>
+        </div>
+      </section>
+
+      <section>
+        <span class="img"><img src="https://picsum.photos/id/52/200/200" alt=""><a href="#"><i
+              class="bi bi-heart-fill fav"></i></a></span>
+        <div class="text-middle">
+          <strong style="color:#4c9ef1;">İstanbul Kalkışlı</strong>
+          <h2>Europe Highlights Tour</h2>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star white"></span>
+          <span class="fa fa-star white"></span>
+          <span class="star">5 yorum</span>
+          <p class="ps"><strong class="station">Durak</strong>Italy, Austria, Hungary <span class="more">+2
+              daha</span>
+          </p>
+          <p class="pc"><strong class="category">Kategori</strong>Private, Fuly Guided, Easy <span class="more">+4
+              daha</span></p>
+        </div>
+        <div class="text-end">
+          <p class="night">12 Gece <span><strong class="price-1">2,594 TL</strong>yerine</span></p>
+          <p class="visa">vizesiz <span><strong class="price-2">2,125 TL</strong></span></p>
+          <i class="bi bi-check-circle-fill" style="margin: 18px; color: #205081;"></i>
+          <span style="color: #205081"><b style="font-size: 12px; margin-left: -8px;">Ücretsiz İptal</b></span>
+          <br>
+          <button class="button">Turu incele</button>
+        </div>
+      </section>
+
+      <section>
+        <span class="img"><img src="https://picsum.photos/id/53/200/200" alt=""><a href="#"><i
+              class="bi bi-heart-fill fav"></i></a></span>
+        <div class="text-middle">
+          <strong style="color:#4c9ef1;">İstanbul Kalkışlı</strong>
+          <h2>Europe Highlights Tour</h2>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star white"></span>
+          <span class="fa fa-star white"></span>
+          <span class="star">5 yorum</span>
+          <p class="ps"><strong class="station">Durak</strong>Italy, Austria, Hungary <span class="more">+2
+              daha</span>
+          </p>
+          <p class="pc"><strong class="category">Kategori</strong>Private, Fuly Guided, Easy <span class="more">+4
+              daha</span></p>
+        </div>
+        <div class="text-end">
+          <p class="night">12 Gece <span><strong class="price-1">2,594 TL</strong>yerine</span></p>
+          <p class="visa">vizesiz <span><strong class="price-2">2,125 TL</strong></span></p>
+          <i class="bi bi-check-circle-fill" style="margin: 18px; color: #205081;"></i>
+          <span style="color: #205081"><b style="font-size: 12px; margin-left: -8px;">Ücretsiz İptal</b></span>
+          <br>
+          <button class="button">Turu incele</button>
+        </div>
+      </section>
+
+      <section>
+        <span class="img"><img src="https://picsum.photos/id/54/200/200" alt=""><a href="#"><i
+              class="bi bi-heart-fill fav"></i></a></span>
+        <div class="text-middle">
+          <strong style="color:#4c9ef1;">İstanbul Kalkışlı</strong>
+          <h2>Europe Highlights Tour</h2>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star white"></span>
+          <span class="fa fa-star white"></span>
+          <span class="star">5 yorum</span>
+          <p class="ps"><strong class="station">Durak</strong>Italy, Austria, Hungary <span class="more">+2
+              daha</span>
+          </p>
+          <p class="pc"><strong class="category">Kategori</strong>Private, Fuly Guided, Easy <span class="more">+4
+              daha</span></p>
+        </div>
+        <div class="text-end">
+          <p class="night">12 Gece <span><strong class="price-1">2,594 TL</strong>yerine</span></p>
+          <p class="visa">vizesiz <span><strong class="price-2">2,125 TL</strong></span></p>
+          <i class="bi bi-check-circle-fill" style="margin: 18px; color: #205081;"></i>
+          <span style="color: #205081"><b style="font-size: 12px; margin-left: -8px;">Ücretsiz İptal</b></span>
+          <br>
+          <button class="button">Turu incele</button>
+        </div>
+      </section>
+
+      <section>
+        <span class="img"><img src="https://picsum.photos/id/57/200/200" alt=""><a href="#"><i
+              class="bi bi-heart-fill fav"></i></a></span>
+        <div class="text-middle">
+          <strong style="color:#4c9ef1;">İstanbul Kalkışlı</strong>
+          <h2>Europe Highlights Tour</h2>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star white"></span>
+          <span class="fa fa-star white"></span>
+          <span class="star">5 yorum</span>
+          <p class="ps"><strong class="station">Durak</strong>Italy, Austria, Hungary <span class="more">+2
+              daha</span>
+          </p>
+          <p class="pc"><strong class="category">Kategori</strong>Private, Fuly Guided, Easy <span class="more">+4
+              daha</span></p>
+        </div>
+        <div class="text-end">
+          <p class="night">12 Gece <span><strong class="price-1">2,594 TL</strong>yerine</span></p>
+          <p class="visa">vizesiz <span><strong class="price-2">2,125 TL</strong></span></p>
+          <i class="bi bi-check-circle-fill" style="margin: 18px; color: #205081;"></i>
+          <span style="color: #205081"><b style="font-size: 12px; margin-left: -8px;">Ücretsiz İptal</b></span>
+          <br>
+          <button class="button">Turu incele</button>
+        </div>
+      </section>
+
+      <section>
+        <span class="img"><img src="https://picsum.photos/id/62/200/200" alt=""><a href="#"><i
+              class="bi bi-heart-fill fav"></i></a></span>
+        <div class="text-middle">
+          <strong style="color:#4c9ef1;">İstanbul Kalkışlı</strong>
+          <h2>Europe Highlights Tour</h2>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star white"></span>
+          <span class="fa fa-star white"></span>
+          <span class="star">5 yorum</span>
+          <p class="ps"><strong class="station">Durak</strong>Italy, Austria, Hungary <span class="more">+2
+              daha</span>
+          </p>
+          <p class="pc"><strong class="category">Kategori</strong>Private, Fuly Guided, Easy <span class="more">+4
+              daha</span></p>
+        </div>
+        <div class="text-end">
+          <p class="night">12 Gece <span><strong class="price-1">2,594 TL</strong>yerine</span></p>
+          <p class="visa">vizesiz <span><strong class="price-2">2,125 TL</strong></span></p>
+          <i class="bi bi-check-circle-fill" style="margin: 18px; color: #205081;"></i>
+          <span style="color: #205081"><b style="font-size: 12px; margin-left: -8px;">Ücretsiz İptal</b></span>
+          <br>
+          <button class="button">Turu incele</button>
+        </div>
+      </section>
+
+      <section>
+        <span class="img"><img src="https://picsum.photos/id/49/200/200" alt=""><a href="#"><i
+              class="bi bi-heart-fill fav"></i></a></span>
+        <div class="text-middle">
+          <strong style="color:#4c9ef1;">İstanbul Kalkışlı</strong>
+          <h2>Europe Highlights Tour</h2>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star white"></span>
+          <span class="fa fa-star white"></span>
+          <span class="star">5 yorum</span>
+          <p class="ps"><strong class="station">Durak</strong>Italy, Austria, Hungary <span class="more">+2
+              daha</span>
+          </p>
+          <p class="pc"><strong class="category">Kategori</strong>Private, Fuly Guided, Easy <span class="more">+4
+              daha</span></p>
+        </div>
+        <div class="text-end">
+          <p class="night">12 Gece <span><strong class="price-1">2,594 TL</strong>yerine</span></p>
+          <p class="visa">vizesiz <span><strong class="price-2">2,125 TL</strong></span></p>
+          <i class="bi bi-check-circle-fill" style="margin: 18px; color: #205081;"></i>
+          <span style="color: #205081"><b style="font-size: 12px; margin-left: -8px;">Ücretsiz İptal</b></span>
+          <br>
+          <button class="button">Turu incele</button>
+        </div>
+      </section>
+
+      <section>
+        <span class="img"><img src="https://picsum.photos/id/77/200/200" alt=""><a href="#"><i
+              class="bi bi-heart-fill fav"></i></a></span>
+        <div class="text-middle">
+          <strong style="color:#4c9ef1;">İstanbul Kalkışlı</strong>
+          <h2>Europe Highlights Tour</h2>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star white"></span>
+          <span class="fa fa-star white"></span>
+          <span class="star">5 yorum</span>
+          <p class="ps"><strong class="station">Durak</strong>Italy, Austria, Hungary <span class="more">+2
+              daha</span>
+          </p>
+          <p class="pc"><strong class="category">Kategori</strong>Private, Fuly Guided, Easy <span class="more">+4
+              daha</span></p>
+        </div>
+        <div class="text-end">
+          <p class="night">12 Gece <span><strong class="price-1">2,594 TL</strong>yerine</span></p>
+          <p class="visa">vizesiz <span><strong class="price-2">2,125 TL</strong></span></p>
+          <i class="bi bi-check-circle-fill" style="margin: 18px; color: #205081;"></i>
+          <span style="color: #205081"><b style="font-size: 12px; margin-left: -8px;">Ücretsiz İptal</b></span>
+          <br>
+          <button class="button">Turu incele</button>
+        </div>
+      </section>
+
+      <section>
+        <span class="img"><img src="https://picsum.photos/id/92/200/200" alt=""><a href="#"><i
+              class="bi bi-heart-fill fav"></i></a></span>
+        <div class="text-middle">
+          <strong style="color:#4c9ef1;">İstanbul Kalkışlı</strong>
+          <h2>Europe Highlights Tour</h2>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star white"></span>
+          <span class="fa fa-star white"></span>
+          <span class="star">5 yorum</span>
+          <p class="ps"><strong class="station">Durak</strong>Italy, Austria, Hungary <span class="more">+2
+              daha</span>
+          </p>
+          <p class="pc"><strong class="category">Kategori</strong>Private, Fuly Guided, Easy <span class="more">+4
+              daha</span></p>
+        </div>
+        <div class="text-end">
+          <p class="night">12 Gece <span><strong class="price-1">2,594 TL</strong>yerine</span></p>
+          <p class="visa">vizesiz <span><strong class="price-2">2,125 TL</strong></span></p>
+          <i class="bi bi-check-circle-fill" style="margin: 18px; color: #205081;"></i>
+          <span style="color: #205081"><b style="font-size: 12px; margin-left: -8px;">Ücretsiz İptal</b></span>
+          <br>
+          <button class="button">Turu incele</button>
+        </div>
+      </section>
+
+      <section>
+        <span class="img"><img src="https://picsum.photos/id/93/200/200" alt=""><a href="#"><i
+              class="bi bi-heart-fill fav"></i></a></span>
+        <div class="text-middle">
+          <strong style="color:#4c9ef1;">İstanbul Kalkışlı</strong>
+          <h2>Europe Highlights Tour</h2>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star white"></span>
+          <span class="fa fa-star white"></span>
+          <span class="star">5 yorum</span>
+          <p class="ps"><strong class="station">Durak</strong>Italy, Austria, Hungary <span class="more">+2
+              daha</span>
+          </p>
+          <p class="pc"><strong class="category">Kategori</strong>Private, Fuly Guided, Easy <span class="more">+4
+              daha</span></p>
+        </div>
+        <div class="text-end">
+          <p class="night">12 Gece <span><strong class="price-1">2,594 TL</strong>yerine</span></p>
+          <p class="visa">vizesiz <span><strong class="price-2">2,125 TL</strong></span></p>
+          <i class="bi bi-check-circle-fill" style="margin: 18px; color: #205081;"></i>
+          <span style="color: #205081"><b style="font-size: 12px; margin-left: -8px;">Ücretsiz İptal</b></span>
+          <br>
+          <button class="button">Turu incele</button>
+        </div>
+      </section>
+
+      <section>
+        <span class="img"><img src="https://picsum.photos/id/100/200/200" alt=""><a href="#"><i
+              class="bi bi-heart-fill fav"></i></a></span>
+        <div class="text-middle">
+          <strong style="color:#4c9ef1;">İstanbul Kalkışlı</strong>
+          <h2>Europe Highlights Tour</h2>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star white"></span>
+          <span class="fa fa-star white"></span>
+          <span class="star">5 yorum</span>
+          <p class="ps"><strong class="station">Durak</strong>Italy, Austria, Hungary <span class="more">+2
+              daha</span>
+          </p>
+          <p class="pc"><strong class="category">Kategori</strong>Private, Fuly Guided, Easy <span class="more">+4
+              daha</span></p>
+        </div>
+        <div class="text-end">
+          <p class="night">12 Gece <span><strong class="price-1">2,594 TL</strong>yerine</span></p>
+          <p class="visa">vizesiz <span><strong class="price-2">2,125 TL</strong></span></p>
+          <i class="bi bi-check-circle-fill" style="margin: 18px; color: #205081;"></i>
+          <span style="color: #205081"><b style="font-size: 12px; margin-left: -8px;">Ücretsiz İptal</b></span>
+          <br>
+          <button class="button">Turu incele</button>
+        </div>
+      </section>
+
+      <footer>
+        <a href="#"><i class="bi bi-chevron-double-left"></i></a>
+        <a href="#"><i class="bi bi-chevron-left"></i></a>
+        <button>1</button>
+        <button>2</button>
+        <button style="background-color: #3a80c7; color:white;">3</button>
+        <button>4</button>
+        <button>5</button>
+        <span style="margin: 12px 5px 0 5px;">...</span>
+        <button>12</button>
+        <a href="#"><i class="bi bi-chevron-right"></i></a>
+        <a href="#"><i class="bi bi-chevron-double-right"></i></a>
+      </footer>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
